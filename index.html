@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOX | Wild Logic</title>
+    <style>
+        /* RESET & BASE */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f9f9f9; /* Clean Gallery White */
+            color: #003366; /* Saltire Blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* LAYOUT CONTAINER */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            max-width: 600px; /* Constraints width on large screens */
+            padding: 20px;
+        }
+
+        /* LOGO STYLING */
+        .logo-img {
+            width: 80%; /* Responsive width */
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 40px; /* Space between Logo and URL */
+            filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.05)); /* Subtle depth */
+        }
+
+        /* URL STYLING */
+        .url-img {
+            width: 50%; /* Smaller hierarchy than main logo */
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        /* TAGLINE STYLING */
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 600; /* Thicker engineering font weight */
+            letter-spacing: 0.3em; /* Wide spacing for modern look */
+            text-transform: uppercase;
+            color: #003366;
+            border-top: 2px solid #dcb326; /* The Lion Gold Line */
+            padding-top: 20px;
+        }
+
+        /* MOBILE ADJUSTMENTS */
+        @media (max-width: 600px) {
+            .tagline {
+                font-size: 0.9rem;
+                letter-spacing: 0.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/jox_logo_transparent.png" alt="JOX Logo" class="logo-img">
+
+        <img src="images/jox_design_url_transparent.png" alt="JOX.SCOT" class="url-img">
+
+        <div class="tagline">Primal Precision</div>
+    </div>
+
+</body>
+</html>
